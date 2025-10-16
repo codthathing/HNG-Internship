@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+#profile-card-article {
+  display: flex;
+}
+
+#profile-details-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-details-topics {
+  color: rgb(203, 203, 203);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-transform: capitalize;
+}
+
+#profile-details-name {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 0.75;
+  text-transform: capitalize;
+}
+
+
+
+
+
+@media all and (max-width: 1023px) {
+  #profile-card-article {
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+@media all and (max-width: 767px) {}
+
+
+
+
+
+@media all and (min-width: 768px) and (max-width: 1023px) {}
+
+
+
+
+
+@media all and (min-width: 1024px) {
+  body {
+    height: 100dvh;
+    align-items: center;
+  }
+
+  #profile-card-article {
+    background-color: white;
+    border-radius: 2rem;
+    box-shadow: 0 4px 20px 10px rgb(245, 245, 245);
+    padding: 2rem;
+    gap: 0 2rem;
+  }
+
+  #profile-details-section {
+    width: 40%;
+    gap: 1.75rem 0;
+  }
+
+  .profile-details-div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem 0;
+  }
+
+  .profile-details-topics {
+    font-size: 0.75rem;
+  }
+
+  #profile-details-avatar {
+    width: 15rem;
+  }
+
+  #profile-socials-section {
+    flex-grow: 1;
+  }
+}

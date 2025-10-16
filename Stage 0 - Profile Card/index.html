@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Profile Card</title>
+  </head>
+  <body>
+    <article data-testid="test-profile-card" id="profile-card-article">
+      <section id="profile-details-section">
+        <figure class="profile-details-div">
+          <figcaption class="profile-details-topics">profile picture</figcaption>
+          <img src="./assets/profile-picture.png" id="profile-details-avatar" alt="user avatar" data-testid="test-user-avatar" />
+        </figure>
+        <div class="profile-details-div">
+          <span class="profile-details-topics">name</span>
+          <h2 aria-label="user-name" id="profile-details-name" data-testid="test-user-name">akinwunmi oluwasegun</h2>
+        </div>
+        <div class="profile-details-div">
+          <span class="profile-details-topics">biography</span>
+          <p data-testid="test-user-bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus vitae, inventore debitis dolor sint labore dignissimos error distinctio porro officiis.</p>
+        </div>
+        <time datetime="" data-testid="test-user-time"></time>
+      </section>
+      <section id="profile-socials-section">
+        <div>
+          <h1>Social Links</h1>
+          <nav data-testid="test-user-social-links">
+            <a href="" target="_blank" data-testid="test-user-social-twitter" rel="noopener noreferrer"></a>
+          </nav>
+        </div>
+        <main>
+          <section>
+            <h1>Hobbies</h1>
+            <ul data-testid="test-user-hobbies"></ul>
+          </section>
+          <section>
+            <h1>Dislikes</h1>
+            <ul data-testid="test-user-dislikes"></ul>
+          </section>
+        </main>
+        <time datetime=""></time>
+      </section>
+    </article>
+    <script src="index.js"></script>
+  </body>
+</html>
