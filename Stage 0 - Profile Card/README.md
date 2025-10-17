@@ -5,8 +5,7 @@
 - This is a stage 0 task of my HNG internship
 
 # Installation and Running Locally
-- Visit the Github repository link where the task folder is hosted.
-- Paste the the repo link to [Github Directory Downloader](https://download-directory.github.io/) to download the subdirectory zip file for this particular (Profile Card) task
+- Paste the the repo link uploaded to [Github Directory Downloader](https://download-directory.github.io/), in order to download the subdirectory zip file for this particular (Profile Card) task
 - Extract the downloaded ZIP file to access the task files on your IDE (i.e VS Code)
 - Open the index.html file in your browser to view the Profile Card
 
