@@ -4,9 +4,11 @@
 # Description
 - This is a stage 0 task of my HNG internship
 
-# Running Locally
-- Clone the github repository to your local machine
-- Open the index HTML file on your browser
+# Installation and Running Locally
+- Visit the Github repository link where the task folder is hosted.
+- Paste the the repo link to [Github Directory Downloader](https://download-directory.github.io/) to download the subdirectory zip file for this particular (Profile Card) task
+- Extract the downloaded ZIP file to access the task files on your IDE (i.e VS Code)
+- Open the index.html file in your browser to view the Profile Card
 
 # Usage
 - Use the TAB key to navigate between social links + ENTER key to visit the link
