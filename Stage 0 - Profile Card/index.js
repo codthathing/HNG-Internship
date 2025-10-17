@@ -15,7 +15,7 @@ const detailsObjectArray = [
   {
     type: "paragraph",
     topic: "biography",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus vitae, inventore debitis dolor sint labore dignissimos error distinctio porro officiis.",
+    text: "I'm a frontend devloper fascinated by the idea of creating real-world projects, and I have been able to build high-performing web applications with cross-browser compatibility, interactivity, and standout features. ",
     attributeArray: [
       { attribute: "id", value: "profile-details-biography" },
       { attribute: "data-testid", value: "test-user-bio" },
