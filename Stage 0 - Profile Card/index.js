@@ -37,7 +37,7 @@ const socialsObjectArray = [
     childArray: [
       { text: "Portfolio", href: "codthathing-dev.vercel.app", testId: "test-user-social-portfolio" },
       { text: "X", href: "x.com/codthathing", testId: "test-user-social-x" },
-      { text: "LinkedIn", href: "linkedin.com/in/codthating", testId: "test-user-social-linkedin" },
+      { text: "LinkedIn", href: "linkedin.com/in/codthathing", testId: "test-user-social-linkedin" },
       { text: "Github", href: "github.com/codthathing", testId: "test-user-social-github" },
     ],
   },
