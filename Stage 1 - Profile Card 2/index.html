@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" as="style" href="style.css" />
+    <title>Profile Details</title>
+  </head>
+  <body>
+    <header id="header">
+      <h1 id="header-topic">Contact</h1>
+      <i class="fa-solid fa-bars" id="header-menu-icon"></i>
+      <nav id="header-nav">
+        <i class="fa-solid fa-xmark" id="header-cancel-icon"></i>
+        <ul id="header-nav-list" role="tablist"></ul>
+      </nav>
+    </header>
+    <main id="pages-main">
+      <!-- Contact Page -->
+      <section id="contact-us-section">
+        <form action="" id="contact-form">
+          <p data-testid="test-contact-success" id="contact-success-text">form successfully submitted!</p>
+          <main id="contact-main"></main>
+          <input type="submit" data-testid="test-contact-submit" value="submit" id="contact-submit-button" />
+        </form>
+      </section>
+
+      <!-- Profile Page -->
+      <section id="profile-section">
+        <article data-testid="test-profile-card" id="profile-card-article">
+          <section id="profile-details-section">
+            <figure class="profile-card-div" id="profile-card-figure">
+              <figcaption class="profile-details-topics">profile picture</figcaption>
+              <img src="./assets/profile-picture.png" id="profile-details-avatar" alt="user avatar" data-testid="test-user-avatar" />
+              <time data-testid="test-user-time" id="profile-card-time"></time>
+            </figure>
+          </section>
+          <section id="profile-socials-section">
+            <main id="profile-socials-main"></main>
+          </section>
+        </article>
+      </section>
+
+      <!-- About Page -->
+      <section id="about-me-section">
+        <main data-testid="test-about-page" id="about-main"></main>
+      </section>
+    </main>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

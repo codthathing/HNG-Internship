@@ -1,0 +1,169 @@
+@import url('./styles/profile.css');
+@import url('./styles/contact.css');
+@import url('./styles/about.css');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+#header {
+  display: flex;
+}
+
+#header-nav-list {
+  display: flex;
+}
+
+.header-nav-link {
+  text-transform: capitalize;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  cursor: pointer;
+  list-style: none;
+}
+
+#pages-main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+
+
+
+/* Styling for both mobile and tablet */
+@media all and (max-width: 1023px) {
+}
+
+
+
+
+
+@media all and (max-width: 767px) {
+  #header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+  }
+
+  #header-topic {
+    text-transform: capitalize;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    margin-left: 1rem;
+    font-size: 1.125rem;
+  }
+
+  #header-menu-icon {
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+
+  #header-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    background-color: white;
+    width: 100%;
+    height: 100dvh;
+    padding: 1.5rem 1rem;
+    flex-direction: column;
+    gap: 2.5rem 0;
+    z-index: 25;
+  }
+
+  #header-nav.slide-out {
+    display: flex;
+    animation: slideOutToRight 500ms ease-out forwards;
+  }
+
+  @keyframes slideOutToRight {
+    from {
+      left: 0;
+    }
+
+    to {
+      left: 100%;
+    }
+  }
+
+  #header-nav.slide-in {
+    display: flex;
+    animation: slideInFromRight 500ms ease-out forwards;
+  }
+
+  @keyframes slideInFromRight {
+    from {
+      left: 100%;
+    }
+
+    to {
+      left: 0;
+    }
+  }
+
+  #header-cancel-icon {
+    font-size: 1rem;
+  }
+
+  #header-nav-list {
+    flex-direction: column;
+    gap: 1rem 0;
+  }
+}
+
+
+
+
+
+/* Styling for both tablet and desktop */
+@media all and (min-width: 768px) {
+  #header {
+    justify-content: center;
+    padding: 1rem 0;
+  }
+
+  #header-topic,
+  #header-menu-icon,
+  #header-cancel-icon {
+    display: none;
+  }
+
+  #header-nav {
+    display: block !important;
+    border-radius: 2rem;
+    box-shadow: 0 4px 4px 4px rgb(245, 245, 245);
+    padding: 1rem 2.5rem;
+  }
+
+  #header-nav-list {
+    gap: 0 4rem;
+  }
+}
+
+
+
+
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+}
+
+
+
+
+
+@media all and (min-width: 1024px) {
+  #pages-main {
+    align-items: center;
+  }
+}
