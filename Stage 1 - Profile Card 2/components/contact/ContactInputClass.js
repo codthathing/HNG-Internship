@@ -42,6 +42,7 @@ export class ContactInputClass {
 
     const span = document.createElement("span");
     span.setAttribute("id", this.#describedById);
+    span.setAttribute("data-testid", this.#describedById);
     span.setAttribute("class", "contact-input-error");
 
     div.append(main, span);
